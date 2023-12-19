@@ -48,7 +48,9 @@
         }
 
         .viz .about {
-            margin-top: 3em;
+            max-height: 800px;
+            height: 100%;
+            margin-top: 2em;
             text-align: left;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -120,6 +122,41 @@
             bottom: 0;
         }
 
+        /* Improved CSS for the "about-me" section */
+        .header {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .about-me {
+            text-align: left;
+            margin-top: 0;
+            margin-left: 20px;
+            padding: 20px;
+            background: #393c3e; /* Matching the background of other sections */
+            border-radius: 8px;
+            max-width: 700px; /* Adjust the width as needed */
+        }
+
+        .about-me p {
+            color: #e5e5e5;
+            margin-bottom: 0.5em;
+            font-size: 1em; /* A slightly smaller font size */
+        }
+
+        /* Ensure the .viz styling applies to the new header section */
+        .viz .header h1,
+        .viz .header h2 {
+            width: 100%;
+            margin-bottom: 0.2em; /* Less space below the headers */
+        }
+
+        /* Adjust the top padding to align with the new header */
+        .viz {
+            padding: 20px 40px;
+        }
+
     </style>
     <meta charset="UTF-8">
     <title>Michal Pokorný</title>
@@ -128,12 +165,28 @@
 <body>
     <main>
         <div class="viz">
-            <h1>Michal Pokorný</h1>
-            <h2>IT student</h2>
+            <div class="header">
+                <!-- Your name and title -->
+                <div>
+                    <h1>Michal Pokorný</h1>
+                    <h2>IT student</h2>
+                </div>
+                <!-- About Me section -->
+                <div class="about-me">
+                    <p>Welcome to my portfolio. I'm a student that has been studying IT for 5 years, specializing in intelligent systems.
+                        Ever since I was a child, I have always liked solving puzzles, and I've always been interested in learning thigs I don't understand.
+                        This has led me to be passionate about computers and programming, and now I'm transfering this curiosity into machine learning and artifficial intelligence.
+                        Currently I'm interested in working in IT, if you are interested in hiring me, feel free to reach out to me on my contacts bellow.
+                    </p>
+                </div>
+            </div>
             <div class="about">
                 <div>
                     <h3>My interests</h3>
-                    <p>Your text about interests goes here...</p>
+                    <p>Volleyball</p>
+                    <p>Learning Japanese</p>
+                    <p>Making video game music</p>
+                    <p>Coding puzzles</p>
                 </div>
                 <div>
                     <h3>Education</h3>
@@ -153,8 +206,8 @@
                     <p>Jiříkov 407 53</p>
                     <p>Březinova 111/10</p>
                     <p>123 456 789</p>
-                    <a href="index.html">GitHub</a>
-                    <a href="index.html">Facebook</a>
+                    <a href="https://github.com/MichalPKN">GitHub</a><br>
+                    <a href="https://www.facebook.com/Miapp1234">Facebook</a>
                 </div>
             </div>
         </div>
